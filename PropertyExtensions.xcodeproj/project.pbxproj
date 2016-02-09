@@ -10,6 +10,7 @@
 		A23A21F31C6A4CB7005E4020 /* PropertyExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A23A21F21C6A4CB7005E4020 /* PropertyExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A23A21FD1C6A4D8D005E4020 /* PropertyExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */; };
 		A23A21FF1C6A4DE1005E4020 /* PropertyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A21FE1C6A4DE1005E4020 /* PropertyExtensions.swift */; };
+		A23A22011C6A4EA1005E4020 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A23A22001C6A4EA1005E4020 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		A23A21F41C6A4CB7005E4020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertyExtensions.podspec; sourceTree = "<group>"; };
 		A23A21FE1C6A4DE1005E4020 /* PropertyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyExtensions.swift; sourceTree = "<group>"; };
+		A23A22001C6A4EA1005E4020 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 				A23A21F11C6A4CB7005E4020 /* PropertyExtensions */,
 				A23A21F01C6A4CB7005E4020 /* Products */,
 				A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */,
+				A23A22001C6A4EA1005E4020 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23A22011C6A4EA1005E4020 /* README.md in Sources */,
 				A23A21FF1C6A4DE1005E4020 /* PropertyExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
