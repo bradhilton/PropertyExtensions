@@ -2,20 +2,16 @@
 
 `PropertyExtensions` allows you to easily add stored properties in class extensions:
 ```swift
-
 extension UIView : PropertyExtensions {
-
-var identifier: String {
-get {
-return getProperty("identifier", initial: "Unknown")
+  var identifier: String {
+    get {
+      return getProperty("identifier", initial: "Unknown")
+    }
+    set {
+      setValue(newValue, forProperty: "identifier")
+    }
+  }
 }
-set {
-setValue(newValue, forProperty: "identifier")
-}
-}
-
-}
-
 ```
 
 Enjoy!
