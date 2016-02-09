@@ -8,15 +8,15 @@
 
 import ObjectiveC.runtime
 
-protocol PropertyExtensions : class {}
+public protocol PropertyExtensions : class {}
 
 extension PropertyExtensions {
     
-    func getProperty<T>(property: String) -> T? {
+    public func getProperty<T>(property: String) -> T? {
         return (objc_getAssociatedObject(self, property.associatedValueKey) as? AssociatedValue)?.value as? T
     }
     
-    func getProperty<T>(property: String, initial: T) -> T {
+    public func getProperty<T>(property: String, initial: T) -> T {
         if let value: T = getProperty(property) {
             return value
         } else {
@@ -25,7 +25,7 @@ extension PropertyExtensions {
         }
     }
     
-    func setValue<T>(value: T?, forProperty property: String) {
+    public func setValue<T>(value: T?, forProperty property: String) {
         objc_setAssociatedObject(self, property.associatedValueKey, AssociatedValue(value: value), .OBJC_ASSOCIATION_RETAIN)
     }
     
