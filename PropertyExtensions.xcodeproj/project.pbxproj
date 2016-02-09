@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A23A21F31C6A4CB7005E4020 /* PropertyExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A23A21F21C6A4CB7005E4020 /* PropertyExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A23A21FD1C6A4D8D005E4020 /* PropertyExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */; };
+		A23A21FF1C6A4DE1005E4020 /* PropertyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23A21FE1C6A4DE1005E4020 /* PropertyExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A23A21EF1C6A4CB7005E4020 /* PropertyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PropertyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23A21F21C6A4CB7005E4020 /* PropertyExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyExtensions.h; sourceTree = "<group>"; };
 		A23A21F41C6A4CB7005E4020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PropertyExtensions.podspec; sourceTree = "<group>"; };
+		A23A21FE1C6A4DE1005E4020 /* PropertyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			children = (
 				A23A21F11C6A4CB7005E4020 /* PropertyExtensions */,
 				A23A21F01C6A4CB7005E4020 /* Products */,
+				A23A21FC1C6A4D8D005E4020 /* PropertyExtensions.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +53,7 @@
 			children = (
 				A23A21F21C6A4CB7005E4020 /* PropertyExtensions.h */,
 				A23A21F41C6A4CB7005E4020 /* Info.plist */,
+				A23A21FE1C6A4DE1005E4020 /* PropertyExtensions.swift */,
 			);
 			path = PropertyExtensions;
 			sourceTree = "<group>";
@@ -120,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23A21FD1C6A4D8D005E4020 /* PropertyExtensions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23A21FF1C6A4DE1005E4020 /* PropertyExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +236,7 @@
 		A23A21F81C6A4CB7005E4020 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +247,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradhilton.PropertyExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A23A21F91C6A4CB7005E4020 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
