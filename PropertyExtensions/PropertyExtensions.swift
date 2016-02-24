@@ -16,6 +16,16 @@ extension PropertyExtensions {
         return (objc_getAssociatedObject(self, property.associatedValueKey) as? AssociatedValue)?.value as? T
     }
     
+    public func getProperty<T>(property: String, initial: () -> T) -> T {
+        if let value: T = getProperty(property) {
+            return value
+        } else {
+            let value = initial()
+            setValue(value, forProperty: property)
+            return value
+        }
+    }
+    
     public func getProperty<T>(property: String, initial: T) -> T {
         if let value: T = getProperty(property) {
             return value

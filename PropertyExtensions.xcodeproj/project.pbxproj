@@ -291,6 +291,7 @@
 				A23A21F91C6A4CB7005E4020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

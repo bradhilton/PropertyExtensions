@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PropertyExtensions"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "Add Stored Properties In Swift Class Extensions"
   s.description  = <<-DESC
                     PropertyExtensions allows you to dynamically add properties to your class extensions.
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/bradhilton/PropertyExtensions"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Brad Hilton" => "brad@skyvive.com" }
-  s.source       = { :git => "https://github.com/bradhilton/PropertyExtensions.git", :tag => "1.0.4" }
+  s.source       = { :git => "https://github.com/bradhilton/PropertyExtensions.git", :tag => "1.0.5" }
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
